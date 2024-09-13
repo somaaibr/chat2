@@ -31,6 +31,9 @@ const App = () => {
 
     const theme = createTheme(
         {
+            typography: {
+                fontFamily: "Zeroes One, Geomanist, sans-serif", // Defina as fontes aqui
+            },
             scrollbarStyles: {
                 "&::-webkit-scrollbar": {
                     width: '8px',
@@ -51,33 +54,33 @@ const App = () => {
             },
             palette: {
                 type: mode,
-                primary: { main: mode === "light" ? "#682EE3" : "#FFFFFF" },
-                textPrimary: mode === "light" ? "#682EE3" : "#FFFFFF",
-                borderPrimary: mode === "light" ? "#682EE3" : "#FFFFFF",
-                dark: { main: mode === "light" ? "#333333" : "#F3F3F3" },
-                light: { main: mode === "light" ? "#F3F3F3" : "#333333" },
-                tabHeaderBackground: mode === "light" ? "#EEE" : "#666",
-                optionsBackground: mode === "light" ? "#fafafa" : "#333",
-				options: mode === "light" ? "#fafafa" : "#666",
-				fontecor: mode === "light" ? "#128c7e" : "#fff",
-                fancyBackground: mode === "light" ? "#fafafa" : "#333",
-				bordabox: mode === "light" ? "#eee" : "#333",
-				newmessagebox: mode === "light" ? "#eee" : "#333",
-				inputdigita: mode === "light" ? "#fff" : "#666",
-				contactdrawer: mode === "light" ? "#fff" : "#666",
-				announcements: mode === "light" ? "#ededed" : "#333",
-				login: mode === "light" ? "#fff" : "#1C1C1C",
-				announcementspopover: mode === "light" ? "#fff" : "#666",
-				chatlist: mode === "light" ? "#eee" : "#666",
-				boxlist: mode === "light" ? "#ededed" : "#666",
-				boxchatlist: mode === "light" ? "#ededed" : "#333",
-                total: mode === "light" ? "#fff" : "#222",
-                messageIcons: mode === "light" ? "grey" : "#F3F3F3",
-                inputBackground: mode === "light" ? "#FFFFFF" : "#333",
-                barraSuperior: mode === "light" ? "linear-gradient(to right, #682EE3, #682EE3 , #682EE3)" : "#666",
-				boxticket: mode === "light" ? "#EEE" : "#666",
-				campaigntab: mode === "light" ? "#ededed" : "#666",
-				mediainput: mode === "light" ? "#ededed" : "#1c1c1c",
+                primary: { main: mode === "light" ? "#152B59" : "#FFFFFF" },  // Azul-escuro no modo claro, branco no escuro
+                textPrimary: { main: mode === "light" ? "#152B59" : "#FFFFFF" },  // Azul-escuro para o texto no modo claro, branco no escuro
+                borderPrimary: { main: mode === "light" ? "#152B59" : "#FFFFFF" },  // Bordas azuis no claro, branco no escuro
+                dark: { main: mode === "light" ? "#010817" : "#F3F3F3" },  // Fundo escuro no claro, claro no escuro
+                light: { main: mode === "light" ? "#F3F3F3" : "#010817" },  // Fundo claro no modo claro, escuro no escuro
+                tabHeaderBackground: { main: mode === "light" ? "#295FA6" : "#666" },  // Fundo de abas azul-claro no modo claro, cinza no escuro
+                optionsBackground: { main: mode === "light" ? "#fafafa" : "#152B59" },  // Fundo de opções branco no claro, azul-escuro no escuro
+                options: { main: mode === "light" ? "#fafafa" : "#152B59" },  // Opções com fundo similar para legibilidade
+                fontecor: { main: mode === "light" ? "#295FA6" : "#fff" },  // Cor do texto principal
+                fancyBackground: { main: mode === "light" ? "#fafafa" : "#152B59" },  // Fundo decorativo claro ou escuro
+                bordabox: { main: mode === "light" ? "#EEE" : "#295FA6" },  // Bordas das caixas
+                newmessagebox: { main: mode === "light" ? "#EEE" : "#295FA6" },  // Fundo de novas mensagens
+                inputdigita: { main: mode === "light" ? "#fff" : "#295FA6" },  // Fundo dos inputs
+                contactdrawer: { main: mode === "light" ? "#fff" : "#295FA6" },  // Fundo do menu de contatos
+                announcements: { main: mode === "light" ? "#ededed" : "#295FA6" },  // Fundo de anúncios
+                login: { main: mode === "light" ? "#A3C1E6" : "#1C1C1C" },  // **Ajustado**: Fundo da tela de login
+                announcementspopover: { main: mode === "light" ? "#fff" : "#295FA6" },  // Fundo do popover de anúncios
+                chatlist: { main: mode === "light" ? "#EEE" : "#295FA6" },  // Fundo da lista de chats
+                boxlist: { main: mode === "light" ? "#ededed" : "#295FA6" },  // Fundo das listas de caixas
+                boxchatlist: { main: mode === "light" ? "#ededed" : "#295FA6" },  // Fundo das caixas de chat
+                total: { main: mode === "light" ? "#fff" : "#222" },  // Cor do fundo dos totais
+                messageIcons: { main: mode === "light" ? "grey" : "#F3F3F3" },  // Ícones de mensagens
+                inputBackground: { main: mode === "light" ? "#FFFFFF" : "#152B59" },  // Fundo dos campos de entrada
+                barraSuperior: { main: mode === "light" ? "linear-gradient(to right, #152B59, #295FA6)" : "#152B59" },  // Fundo da barra superior
+                boxticket: { main: mode === "light" ? "#EEE" : "#295FA6" },  // Fundo de tickets
+                campaigntab: { main: mode === "light" ? "#ededed" : "#295FA6" },  // Fundo das abas de campanhas
+                mediainput: { main: mode === "light" ? "#ededed" : "#1c1c1c" }  // Fundo da área de input de mídia
             },
             mode,
         },
